@@ -1,0 +1,7 @@
+.delete {
+    position: absolute;
+    left: 15px;
+}
+.todoItem {
+    margin-bottom: .5em;
+}
