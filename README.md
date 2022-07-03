@@ -24,7 +24,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Basic To-do list app with some cool looking magic. This is created with just JS/CSS/HTML and it's purpose is to just for my own practice coding practice without huge libraries/frameworks suchs as React and Vue.
+Basic To-do list app with some cool looking magic. This is created with just JS/CSS/HTML and it's purpose is to increase my coding skills and really just for my own practice coding without huge libraries/frameworks suchs as React and Vue.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
