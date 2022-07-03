@@ -1,3 +1,3 @@
 # ToDoList
-- Try It Out: <a href target="_blank">https://to-do-list-six-xi.vercel.app/</a>
+- Try It Out: https://to-do-list-six-xi.vercel.app/
 - JS/HTML/CSS
