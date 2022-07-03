@@ -80,7 +80,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Tae K. Jung - [Portfolio](https://taekjung.com) - taethedev@gmail.com
+TaeTheDev - [Portfolio](https://taekjung.com) - taethedev@gmail.com
 
 Project Link: [Magic ToDoList](https://github.com/jung8821/ToDoList)
 
