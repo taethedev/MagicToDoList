@@ -13,7 +13,7 @@
   <h3 align="center">Magic To-Do-List</h3>
 
   <p align="center">
-    To-Do List build with JS/CSS/HTML & some Magic
+    To-Do List built with JS/CSS/HTML & some Magic
     <br />
     :information_desk_person: <a href= "https://to-do-list-six-xi.vercel.app/"><Strong>Try It Out!</Strong><a> 
     <br />
