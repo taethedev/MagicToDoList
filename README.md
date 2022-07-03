@@ -93,4 +93,3 @@ Project Link: [Magic ToDoList](https://github.com/jung8821/ToDoList)
 [license-url]: https://github.com/jung8821/ToDoList/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/taekjung
-[product-screenshot]: images/screenshot.png
