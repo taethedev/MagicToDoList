@@ -1,7 +1,59 @@
-.delete {
+.todo__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2em;
+}
+.todo__header {
+    text-align: center;
+}
+.todo__list {
+    width: 100%;
+}
+.todo__list-block {
+    position: relative;
+    border: 2px solid purple ;
+    margin-top: 1em;
+}
+.todo__delete {
     position: absolute;
-    left: 15px;
+    right: 0;
+}
+.todo__block-content {
+    padding: 1.5em;
+    text-align: center;
+}
+.block-delete-btn {
+    background-color: transparent;
+    border-width: 0;
+}
+.block-delete-btn-svg {
+    cursor: pointer;
 }
 .todoItem {
     margin-bottom: .5em;
 }
+/* First Text */
+.todo__footer {
+    height: 100%;
+    padding: 20% 0;
+    text-align: center;
+    color: burlywood;
+}
+.todo__enter-first {
+    display: block
+}
+.todo__enter-first--empty {
+    display: none;
+}
+/* Begins Text */
+.todo__enter-begins--empty {
+    display: none;
+}
+.todo__enter-begins {
+    display: block;
+}
+
+
+
