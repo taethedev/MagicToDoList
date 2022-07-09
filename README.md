@@ -26,7 +26,6 @@
 
 Basic To-do list app with some cool looking magic. This is created with just JS/CSS/HTML and it's purpose is to increase my coding skills and really just for my own practice coding without huge libraries/frameworks suchs as React and Vue.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 ### Built With
 
@@ -36,7 +35,6 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * HTML
 * CSS
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- GETTING STARTED -->
@@ -58,7 +56,6 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 2. Open index.html
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -67,14 +64,12 @@ _Below is an example of how you can instruct your audience on installing and set
 
 Type and enter things that you know you should do, but won't.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- CONTACT -->
@@ -84,7 +79,6 @@ TaeTheDev - [Portfolio](https://taekjung.com) - taethedev@gmail.com
 
 Project Link: [Magic ToDoList](https://github.com/taethedev/ToDoList)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
