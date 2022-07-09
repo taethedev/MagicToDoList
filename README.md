@@ -54,7 +54,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/jung8821/ToDoList.git
+   git clone https://github.com/taethedev/ToDoList.git
    ```
 2. Open index.html
 
@@ -82,7 +82,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 TaeTheDev - [Portfolio](https://taekjung.com) - taethedev@gmail.com
 
-Project Link: [Magic ToDoList](https://github.com/jung8821/ToDoList)
+Project Link: [Magic ToDoList](https://github.com/taethedev/ToDoList)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -90,6 +90,6 @@ Project Link: [Magic ToDoList](https://github.com/jung8821/ToDoList)
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/jung8821/ToDoList/blob/master/LICENSE.txt
+[license-url]: https://github.com/taethedev/ToDoList/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/taekjung
