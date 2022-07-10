@@ -35,9 +35,18 @@ This section should list any major frameworks/libraries used to bootstrap your p
 * Vanilla JS
 * HTML
 * CSS
-
-
-
+    
+<!-- Features & Notes -->
+## Features & Notes
+ver. 1.00
+- Autosaves after 3 sec.
+- Autosaves when going blur (off focus) on a note.
+- Editable notes.
+- Extendable notes when hovering.
+- Data is saved on local storage.
+    
+ :love_letter: <span style="color: red;">*NOTE: Please do not save sensitive information.*</span>
+    
 <!-- GETTING STARTED -->
 ## Getting Started
 
