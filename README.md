@@ -10,7 +10,7 @@
     <img src="https://todocreativeagency.com/wp-content/uploads/2021/08/todo-favicon.jpg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Magic To-Do-List</h3>
+  <h3 align="center">Magic To-Do-List </br>v. 1.0.0</h3>
 
   <p align="center">
     To-Do List built with JS/CSS/HTML & some Magic
@@ -38,7 +38,7 @@ This section should list any major frameworks/libraries used to bootstrap your p
     
 <!-- Features & Notes -->
 ## Features & Notes
-ver. 1.00
+ver. 1.0.0
 - Autosaves after 3 sec.
 - Autosaves when going blur (off focus) on a note.
 - Editable notes.
