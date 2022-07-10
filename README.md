@@ -26,6 +26,7 @@
 
 Basic To-do list app with some cool looking magic. This is created with just JS/CSS/HTML and it's purpose is to increase my coding skills and really just for my own practice coding without huge libraries/frameworks suchs as React and Vue.
 
+<img src="https://github.com/taethedev/ToDoList/blob/master/assets/img/Sample.PNG" alt="Sample">
 
 ### Built With
 
