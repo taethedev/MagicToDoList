@@ -12,6 +12,7 @@ const deleteBtn = document.getElementById('deleteAll');
 deleteBtn.addEventListener('click', ()=> deleteAll())
 const divFirst = document.getElementById('first');
 const divBegins = document.getElementById('begins');
+const divFeatures = document.getElementById('features');
 
 
 textbox.focus();
@@ -28,11 +29,13 @@ createTodoList();
 function setupEmptyList () {
     if(isListEmpty(todoList)) {
         divFirst.classList.remove('todo__enter-first--empty');
+        divFeatures.classList.remove('todo__enter-begins--empty');
         divBegins.classList.add('todo__enter-begins--empty');
     }
     else {
         divFirst.classList.add('todo__enter-first--empty');
         divBegins.classList.remove('todo__enter-begins--empty');
+        divFeatures.classList.add('todo__enter-begins--empty');
     }
 }
 // Create todo list
@@ -127,7 +130,7 @@ function createBlock(input, idx) {
 // Edit todo block
 function saveBlock (id, element) {
     let save = element.querySelector('#saveText')
-    console.log(element)
+    // console.log(element)
     save.classList.add('save-animation');
     setTimeout(() => {
         save.classList.remove('save-animation');
@@ -147,8 +150,6 @@ function removeFromList(element) {
         // console.log(element)
         let newList = [];
         newList = currentList.filter((e)=> {
-            console.log(idx)
-            console.log(!e[idx])
             return !e[idx];
         })
         // console.log(newList)
@@ -179,7 +180,7 @@ function getLocalStorage(){
     counter = Number.parseInt(counter);
     currentList = localStorage.getItem('todoList') ? localStorage.getItem('todoList') : [];
     if(currentList.length) currentList = JSON.parse(currentList);
-    console.log(currentList)
+    // console.log(currentList)
 }
 
 // Check if list is empty

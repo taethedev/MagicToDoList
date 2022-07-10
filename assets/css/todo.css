@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
@@ -14,6 +16,12 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
+.body {
+    min-height: 100vh;
+    margin: 0 0 0 0;
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Kalam', cursive;
+}
 .todo__main {
     display: flex;
     flex-direction: column;
@@ -23,6 +31,9 @@
 }
 .todo__header {
     text-align: center;
+}
+.todo__header h1 {
+    font-size: 4em;
 }
 .todo__user-input {
     width: 30%;
@@ -38,7 +49,9 @@
     min-height: 100px;
     max-height: 200px;
     line-height: 20px;
-    border: 1px solid grey ;
+    border: 2px solid grey;
+    border-radius: 1em;
+    background-color: white;
 }
 .todo__input-textbox[contenteditable]:empty::before {
     content: "What to do next...";
@@ -49,6 +62,39 @@
     justify-content: space-evenly;
     
 }
+.todo__btn-add, 
+.todo__btn-save, 
+.todo__btn-delete {
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px;
+  transition: box-shadow .08s linear;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.todo__btn-add:active,
+.todo__btn-save:active,
+.todo__btn-delete:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+  transition: box-shadow .08s linear;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
 .todo__list {
     margin-top: 3em;
     width: 100%;
@@ -62,18 +108,21 @@
     background-color: rgba(255, 255, 0, 0.568);
     position: relative;
     place-self: flex-start;
-    
-    width: 370px;
+    width: 310px;
     margin: 1em;
-
+    transition: box-shadow 0.5s ease;
     box-shadow:
     inset 0 -3em 3em rgba(241 241 241 / 10%),
           0 0  0 2px rgb(255,255,255),
           0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
 .todo__list-block:hover {
-    border: 1px solid #990a0a ;
-    transition: all .2s ease;
+    /* border: 1px solid #990a0a ; */
+    transition: box-shadow 0.5s ease;
+    box-shadow:
+    inset 0 -3em 3em rgba(241 241 241 / 10%),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(255 0 88 / 30%);
 }
 .todo__delete {
     position: absolute;
@@ -114,6 +163,10 @@
 }
 /* Footer Text */
 .todo__footer {
+    display: flex;
+    justify-content: center;   
+}
+.todo__msg {
     position: fixed;
     width: 100%;
     padding: 6% 0;
@@ -139,6 +192,17 @@
     animation: fadeSave 6s linear;
     content: '';
 }
+.features {
+    width: 30%;
+    min-width: 310px;
+    max-width: 400px;
+    animation: fadeIn 3s forwards;
+    animation-delay: 3s;
+    opacity: 0;
+}
+.features h1 {
+    text-align: center;
+}
 
 /* Animations */
 @keyframes fade {
@@ -146,6 +210,10 @@
     30% { opacity: 1; }
     60% { opacity: 1; }
     100% { opacity: 0; }
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
 @keyframes fadeSave {
     0% { 

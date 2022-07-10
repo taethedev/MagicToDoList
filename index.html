@@ -6,10 +6,11 @@
     <link rel="stylesheet" href="assets/css/todo.css">
 </head>
 
-<body>
+<body class="body">
     <div class="todo__main">
         <div class="todo__header">
-            <h1>Magic ToDo List</h1>            
+            <h1>Magic ToDo List</h1>
+            <span>by <a style="text-decoration: none;" href="https://github.com/taethedev" target="_blank">taeTheDev.</a></span>
         </div>
         <div class="todo__user-input">
             <div class="todo__input"></div>
@@ -17,9 +18,10 @@
                 <p id="todoInput" class="todo__input-textbox" name="todo" contenteditable></p>
             </label>
             <div class="todo__btn">
-                <button id="addTodo">ADD TODO</button>
-                <button id="save">SAVE</button>
-                <button id="deleteAll">DELETE ALL</button>
+                <button id="addTodo" class="todo__btn-add">ADD TODO</button>
+                <!-- TODO: save button-->
+                <button id="save" class="todo__btn-save" style="display: none;">SAVE</button>
+                <button id="deleteAll" class="todo__btn-delete">DELETE ALL</button>
             </div>
         </div>
         <div id="todoList" class="todo__list">
@@ -36,12 +38,26 @@
             </div> -->
         </div>
     </div>
-    <div id="first" class="todo__footer todo__enter-first">
-        <h1>START YOU FIRST MAGIC</h1>
+    <div class="todo__footer">
+        <div id="first" class="todo__msg todo__enter-first">
+            <h1>START YOU FIRST MAGIC</h1>
+        </div>
+        <div id="features" class="features">
+            <h1>Features & Notes</h1>
+            <ul>
+                <li>Autosave after 3 sec.</li>
+                <li>Autosave when going blur(off focus) on a note.</li>
+                <li>Editable notes.</li>
+                <li>Extend notes on hover.</li>
+                <li>Data saved on session storage.</li>
+                <li style="color: red;">NOTE: Please do not save sensitive information.</li>
+            </ul>
+        </div>
+        <div id="begins" class="todo__msg todo__enter-begins--empty">
+            <h1>SO IT BEGINS...</h1>
+        </div>
     </div>
-    <div id="begins" class="todo__footer todo__enter-begins--empty">
-        <h1>SO IT BEGINS...</h1>
-    </div>
+    
 </body>
 
 <script src="assets/js/todo.js">
