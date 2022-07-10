@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/todo.css">
+    <link rel="stylesheet" href="assets/css/todo.css">
 </head>
 
 <body>
@@ -11,14 +11,15 @@
         <div class="todo__header">
             <h1>Magic ToDo List</h1>            
         </div>
-        <div class="todo__body">
+        <div class="todo__user-input">
             <div class="todo__input"></div>
-            <label for="todoInput"></label>
-            <textarea id="todoInput" name="todo" type="text" placeholder="What to do next..."></textarea>
-       
+            <label for="todoInput">
+                <p id="todoInput" class="todo__input-textbox" name="todo" contenteditable></p>
+            </label>
             <div class="todo__btn">
-                <button id="addTodo">Add Todo</button>
-                <button id="deleteAll">Delete All</button>
+                <button id="addTodo">ADD TODO</button>
+                <button id="save">SAVE</button>
+                <button id="deleteAll">DELETE ALL</button>
             </div>
         </div>
         <div id="todoList" class="todo__list">
@@ -31,18 +32,19 @@
                 <div class="todo__block-content">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aliquid fugit deleniti, quia quis asperiores incidunt, minima placeat quidem assumenda eveniet saepe vel ipsum! Rem dolorem illum natus tempore! Autem!</p>
                 </div>
+                <div id="saveText" class="save"></div>
             </div> -->
         </div>
     </div>
     <div id="first" class="todo__footer todo__enter-first">
-        <h1>START YOU FIRST TODO</h1>
+        <h1>START YOU FIRST MAGIC</h1>
     </div>
     <div id="begins" class="todo__footer todo__enter-begins--empty">
         <h1>SO IT BEGINS...</h1>
     </div>
 </body>
 
-<script src="/assets/js/todo.js">
+<script src="assets/js/todo.js">
 </script>
 
 </body>

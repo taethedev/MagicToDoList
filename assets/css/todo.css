@@ -1,3 +1,19 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
 .todo__main {
     display: flex;
     flex-direction: column;
@@ -8,21 +24,83 @@
 .todo__header {
     text-align: center;
 }
-.todo__list {
-    width: 100%;
+.todo__user-input {
+    width: 30%;
+    min-width: 270px;
+    max-width: 600px;
 }
+.todo__input-textbox {
+    display: block;
+    padding: 1em 1em .5em 1em;
+    overflow: auto;
+    resize: none;
+    height: 13vh;
+    min-height: 100px;
+    max-height: 200px;
+    line-height: 20px;
+    border: 1px solid grey ;
+}
+.todo__input-textbox[contenteditable]:empty::before {
+    content: "What to do next...";
+    color: gray;
+}
+.todo__btn {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.todo__list {
+    margin-top: 3em;
+    width: 100%;
+    max-width: 2300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+/* Block */
 .todo__list-block {
+    background-color: rgba(255, 255, 0, 0.568);
     position: relative;
-    border: 2px solid purple ;
-    margin-top: 1em;
+    place-self: flex-start;
+    border: 1px solid #605353 ;
+    width: 370px;
+    margin: 1em;
+
+    box-shadow:
+    inset 0 -3em 3em rgba(241 241 241 / 10%),
+          0 0  0 2px rgb(255,255,255),
+          0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.todo__list-block:hover {
+    border: 1px solid #990a0a ;
+    transition: all .2s ease;
 }
 .todo__delete {
     position: absolute;
     right: 0;
 }
 .todo__block-content {
-    padding: 1.5em;
-    text-align: center;
+    padding: 1.5em 2.5em;
+    text-align: left;
+}
+.todo__block-content p {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    resize: none;
+    min-height: 20px;
+    max-height: 300px;
+    line-height: 20px;
+    -webkit-appearance: none;
+    transition: min-height 0.5s ease;
+}
+.todo__block-content p:hover {
+    overflow: overlay;
+    min-height: 300px;
+    transition: min-height 0.5s ease;
+}
+.todo__block-content p[contenteditable] {
+    outline: 0px solid transparent;
 }
 .block-delete-btn {
     background-color: transparent;
@@ -34,15 +112,14 @@
 .todoItem {
     margin-bottom: .5em;
 }
-/* First Text */
+/* Footer Text */
 .todo__footer {
-    height: 100%;
-    padding: 20% 0;
+    position: fixed;
+    width: 100%;
+    padding: 6% 0;
     text-align: center;
     color: burlywood;
-}
-.todo__enter-first {
-    display: block
+    animation: fade 3s forwards;
 }
 .todo__enter-first--empty {
     display: none;
@@ -51,9 +128,37 @@
 .todo__enter-begins--empty {
     display: none;
 }
-.todo__enter-begins {
-    display: block;
+.save {
+    padding-top: .5em;
+    text-align: center;
+    position: absolute;
+    left: 43%;
+    
+}
+.save-animation::after{
+    animation: fadeSave 6s linear;
+    content: '';
 }
 
-
-
+/* Animations */
+@keyframes fade {
+    0% { opacity: 0; }
+    30% { opacity: 1; }
+    60% { opacity: 1; }
+    100% { opacity: 0; }
+}
+@keyframes fadeSave {
+    0% { 
+        opacity: 1;
+        content: ". . . . . . ."; 
+    }
+    30% {
+        opacity: 1;
+    }
+    50% {
+        content: "SAVED";
+    }
+    100% {
+        opacity: 0;
+    }
+}
