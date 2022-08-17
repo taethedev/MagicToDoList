@@ -15,7 +15,7 @@
   <p align="center">
     To-Do List built with JS/CSS/HTML & some Magic
     <br />
-    :information_desk_person: <a href= "https://to-do-list-six-xi.vercel.app/"><Strong>Try It Out!</Strong><a> 
+    :information_desk_person: <a href= "https://magic-todo-list.vercel.app/"><Strong>Try It Out!</Strong><a> 
     <br />
     <br />
   </p>
